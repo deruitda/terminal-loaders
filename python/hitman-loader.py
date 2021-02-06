@@ -14,11 +14,11 @@ def printHitmanBarMany(lines, len):
         bar_str += x
 
     print(bar_str, end = "\r")
-    time.sleep(0.05)
+    time.sleep(0.025)
 
 def printMany():
-    bar_len = 20
-    lines = [0, 3, 6, 9, 12, 15, 18]
+    bar_len = 50
+    lines = [0, 5, 10, 15, 20, 25, -30, -35, -40, -45]
     num_lines = len(lines)
     while(1):
         printHitmanBarMany(lines, bar_len)
